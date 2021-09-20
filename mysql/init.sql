@@ -11,4 +11,4 @@ CREATE TABLE doctor  (FirstName VARCHAR(255) NOT NULL , LastName VARCHAR(255) NO
                     UserName VARCHAR(255), Password VARCHAR(255));
 INSERT INTO doctor (FirstName, LastName, PESEL, UserName, Password) VALUES ("Doktor", "Doktorek", "01234567891", "doktor.doktorek", "pass");
 
-CREATE TABLE notes (PESEL VARCHAR(11) NOT NULL PRIMARY KEY , Note TEXT NOT NULL, Date DATETIME NOT NULL, DoctorUserName VARCHAR(255));
+CREATE TABLE notes (PESEL VARCHAR(11) NOT NULL, Note TEXT NOT NULL, Date DATETIME NOT NULL, DoctorUserName VARCHAR(255));
